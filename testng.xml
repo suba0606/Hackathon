@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	
+	<listeners>
+		
+		<listener class-name="utilities.extentReportManager"/></listeners>
+
+  <test thread-count="5" name="Chrome">
+	<parameter name="browser" value="Chrome"></parameter>
+	  <groups>
+          <run>
+              <!--    <include name="smoke" /> -->
+              <include name="regression" />
+              <!--  <include name="master" /> -->
+          </run>
+      </groups>
+    <classes>
+      <class name="TestCase.TC_01_zigwheels"/>
+    </classes>
+  </test> <!-- Test -->
+  
+	
+	
+
+  <test thread-count="5" name="Edge">
+  <parameter name="browser" value="Edge"></parameter>
+	  <groups>
+          <run>
+              <!--    <include name="smoke" /> -->
+              <include name="regression" />
+              <!--  <include name="master" /> -->
+          </run>
+      </groups>
+    <classes>
+      <class name="TestCase.TC_01_zigwheels"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
