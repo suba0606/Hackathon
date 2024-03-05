@@ -4,6 +4,23 @@
   <listeners>
     <listener class-name="utilities.extentReportManager"/>
   </listeners>
+  <test thread-count="5" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestCase.TC_01_zigwheels">
+        <methods>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- TestCase.TC_01_zigwheels -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
   <test thread-count="5" name="Edge(failed)">
     <parameter name="browser" value="Edge"/>
     <groups>
@@ -15,12 +32,8 @@
       <class name="TestCase.TC_01_zigwheels">
         <methods>
           <include name="setup"/>
-          <include name="usCkr"/>
-          <include name="upcomingCars"/>
-          <include name="login"/>
           <include name="teardown"/>
-          <include name="newBikes"/>
-          <include name="lopkg"/>
+          <include name="login"/>
         </methods>
       </class> <!-- TestCase.TC_01_zigwheels -->
     </classes>

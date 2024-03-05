@@ -1,5 +1,4 @@
 package cucumberStepDefinition;
-import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.OutputType;
@@ -17,7 +16,7 @@ public class hookes {
 	 static Properties p;
 
 	@BeforeAll
-   public static void setup() throws IOException, InterruptedException
+   public static void setup() throws Exception
    {
 		BaseClass.setup("Chrome");
 		//BaseClass.setup("Edge");

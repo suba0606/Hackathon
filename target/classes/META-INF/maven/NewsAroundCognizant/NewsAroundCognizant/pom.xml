@@ -19,7 +19,6 @@
 <version>3.2.3</version>
 <configuration>
 <suiteXmlFiles>
-<suiteXmlFile>CucumberTestNG.xml</suiteXmlFile>
 <suiteXmlFile>testng.xml</suiteXmlFile>
 </suiteXmlFiles>
 </configuration>
@@ -27,6 +26,7 @@
 </plugins>
 </pluginManagement>
 </build>
+-->
 	<dependencies>
 		<!--https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 		<dependency>
