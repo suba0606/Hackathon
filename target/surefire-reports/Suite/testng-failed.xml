@@ -14,38 +14,11 @@
     <classes>
       <class name="TestCase.TC_01_zigwheels">
         <methods>
-          <include name="upcmgBikes"/>
           <include name="setup"/>
-          <include name="usCkr"/>
-          <include name="upcomingCars"/>
           <include name="teardown"/>
           <include name="login"/>
-          <include name="newBikes"/>
-          <include name="lopkg"/>
         </methods>
       </class> <!-- TestCase.TC_01_zigwheels -->
     </classes>
   </test> <!-- Chrome(failed) -->
-  <test thread-count="5" name="Edge(failed)" verbose="0">
-    <parameter name="browser" value="Edge"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="TestCase.TC_01_zigwheels">
-        <methods>
-          <include name="upcmgBikes"/>
-          <include name="setup"/>
-          <include name="usCkr"/>
-          <include name="upcomingCars"/>
-          <include name="login"/>
-          <include name="teardown"/>
-          <include name="newBikes"/>
-          <include name="lopkg"/>
-        </methods>
-      </class> <!-- TestCase.TC_01_zigwheels -->
-    </classes>
-  </test> <!-- Edge(failed) -->
 </suite> <!-- Failed suite [Suite] -->

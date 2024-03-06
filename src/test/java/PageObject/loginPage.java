@@ -20,7 +20,10 @@ public class loginPage extends BasePage{
 //	@FindBy(xpath="//*[@id=\"identifierNext\"]/div/button/div[3]")
 //	WebElement next;
 
-	@FindBy(xpath="//div[@class='o6cuMc Jj6Lae']")
+//	@FindBy(xpath="//div[@class='o6cuMc Jj6Lae']")
+//	WebElement error;
+
+	@FindBy(xpath="//div[@class='Ekjuhf Jj6Lae']")
 	WebElement error;
 
 
