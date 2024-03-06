@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCase.TC_01_zigwheels" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">12 methods,   12 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,6 +102,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCase.TC_01_zigwheels" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCase.TC_01_zigwheels" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
@@ -183,9 +174,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">TestCase.TC_01_zigwheels</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -194,44 +185,8 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;Ekjuhf Jj6Lae&apos;]&quot;}
-  (Session info: chrome=120.0.6099.130)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7af6e5b096d88cecff298ffd103166a7, findElement {value=//div[@class=&apos;Ekjuhf Jj6Lae&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54456}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54456/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7af6e5b096d88cecff298ffd103166a7
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
-	at PageObject.loginPage.errorCapture(loginPage.java:46)
-	at TestCase.TC_01_zigwheels.login(TC_01_zigwheels.java:145)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCase.TC_01_zigwheels</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="login">
@@ -460,58 +415,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'upcmgBikes')
+data.setCell(0, 1, 'newBikes')
 data.setCell(0, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(0, 3, 57515);
+data.setCell(0, 3, 19436);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(1, 3, 35159);
+data.setCell(1, 3, 9273);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'newBikes')
+data.setCell(2, 1, 'usCkr')
 data.setCell(2, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(2, 3, 22905);
+data.setCell(2, 3, 7707);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'usCkr')
 data.setCell(3, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(3, 3, 11812);
+data.setCell(3, 3, 6986);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'newBikes')
+data.setCell(4, 1, 'login')
 data.setCell(4, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(4, 3, 9568);
+data.setCell(4, 3, 6962);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'usCkr')
+data.setCell(5, 1, 'upcmgBikes')
 data.setCell(5, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(5, 3, 7772);
+data.setCell(5, 3, 5807);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'upcmgBikes')
 data.setCell(6, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(6, 3, 5547);
+data.setCell(6, 3, 4730);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'login')
+data.setCell(7, 1, 'newBikes')
 data.setCell(7, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(7, 3, 4537);
+data.setCell(7, 3, 4443);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'lopkg')
 data.setCell(8, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(8, 3, 3057);
+data.setCell(8, 3, 3565);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'upcomingCars')
 data.setCell(9, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(9, 3, 2801);
+data.setCell(9, 3, 3532);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'upcomingCars')
 data.setCell(10, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(10, 3, 2556);
+data.setCell(10, 3, 2099);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'lopkg')
 data.setCell(11, 2, 'TestCase.TC_01_zigwheels')
-data.setCell(11, 3, 2131);
+data.setCell(11, 3, 1668);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -544,65 +499,63 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">upcmgBikes</span>
-                <span class="method-start">23455 ms</span>
+                <span class="method-start">89479 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newBikes</span>
-                <span class="method-start">29044 ms</span>
+                <span class="method-start">95309 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">usCkr</span>
-                <span class="method-start">38614 ms</span>
+                <span class="method-start">114747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">upcomingCars</span>
-                <span class="method-start">46388 ms</span>
+                <span class="method-start">122456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lopkg</span>
-                <span class="method-start">49191 ms</span>
+                <span class="method-start">124557 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">52251 ms</span>
+                <span class="method-start">128125 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">87423 ms</span>
+                <span class="method-start">135088 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class before">
                 <span class="method-name">setup(Edge)</span>
-                <span class="method-start">89508 ms</span>
+                <span class="method-start">136970 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">upcmgBikes</span>
-                <span class="method-start">129875 ms</span>
+                <span class="method-start">211814 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">newBikes</span>
-                <span class="method-start">187391 ms</span>
+                <span class="method-start">216546 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">usCkr</span>
-                <span class="method-start">210297 ms</span>
+                <span class="method-start">220992 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">upcomingCars</span>
-                <span class="method-start">222111 ms</span>
+                <span class="method-start">227979 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">lopkg</span>
-                <span class="method-start">224671 ms</span>
+                <span class="method-start">231513 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">226804 ms</span>
+                <span class="method-start">233182 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">231342 ms</span>
+                <span class="method-start">242456 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

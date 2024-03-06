@@ -15,8 +15,12 @@
       <class name="TestCase.TC_01_zigwheels">
         <methods>
           <include name="setup"/>
+          <include name="usCkr"/>
+          <include name="upcomingCars"/>
           <include name="teardown"/>
           <include name="login"/>
+          <include name="newBikes"/>
+          <include name="lopkg"/>
         </methods>
       </class> <!-- TestCase.TC_01_zigwheels -->
     </classes>
@@ -32,8 +36,12 @@
       <class name="TestCase.TC_01_zigwheels">
         <methods>
           <include name="setup"/>
+          <include name="usCkr"/>
+          <include name="upcomingCars"/>
           <include name="teardown"/>
           <include name="login"/>
+          <include name="newBikes"/>
+          <include name="lopkg"/>
         </methods>
       </class> <!-- TestCase.TC_01_zigwheels -->
     </classes>

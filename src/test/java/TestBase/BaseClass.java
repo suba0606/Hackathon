@@ -1,10 +1,12 @@
 package TestBase;
+import java.net.URL;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -18,23 +20,23 @@ public class BaseClass {
 	@BeforeClass (groups= {"regression","smoke","master"})
 	public static void setup(String browser) throws InterruptedException, Exception {
 
-		switch (browser) {
-		case "Chrome":
-			driver = new ChromeDriver();
-			System.out.println("Chrome is Launched.");
-			break;
+//		switch (browser) {
+//		case "Chrome":
+//			driver = new ChromeDriver();
+//			System.out.println("Chrome is Launched.");
+//			break;
+//
+//		case "Edge":
+//			driver = new EdgeDriver();
+//			System.out.println("Edge is Launched");
+//			break;
+//
+//		}
 
-		case "Edge":
-			driver = new EdgeDriver();
-			System.out.println("Edge is Launched");
-			break;
-
-		}
-
-//		DesiredCapabilities capabilities = new DesiredCapabilities();
-//		capabilities.setPlatform(Platform.WIN11);
-//		capabilities.setBrowserName("MicrosoftEdge");
-//		driver = new RemoteWebDriver(new URL("http://10.66.136.235:4444"), capabilities);
+		DesiredCapabilities capabilities = new DesiredCapabilities();
+		capabilities.setPlatform(Platform.WIN11);
+		capabilities.setBrowserName("MicrosoftEdge");
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
